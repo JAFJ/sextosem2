@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/loginid"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="@font/sansita"
+        android:onClick="IniciarSesion"
+        android:text="@string/login"
+        android:textColor="@color/fonts"
+        app:layout_constraintBottom_toTopOf="@+id/forget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/fonts" />
+
+    <Button
+        android:id="@+id/forget"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/sansita"
+        android:onClick="OlvidarContra"
+        android:text="@string/forgotPassword"
+        android:textColor="@color/fonts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/fonts" />
+
+    <Button
+        android:id="@+id/button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/sansita"
+        android:onClick="Registrarse"
+        android:text="@string/register"
+        android:textColor="@color/fonts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/forget"
+        app:strokeColor="@color/fonts" />
+
+    <EditText
+        android:id="@+id/editTextISuserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/sansita"
+        android:hint="@string/writeuserName"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/fonts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewISuserName"
+        android:layout_width="100dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="152dp"
+        android:fontFamily="@font/sansita"
+        android:text="@string/userName"
+        android:textColor="@color/fonts"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextISPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/sansita"
+        android:hint="@string/writePassword"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/fonts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextISuserName" />
+
+    <TextView
+        android:id="@+id/textViewISPassword"
+        android:layout_width="127dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/sansita"
+        android:text="@string/Password"
+        android:textColor="@color/fonts"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextISPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textViewISuserName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="@font/sansita"
+        android:text="@string/login"
+        android:textColor="@color/fonts"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
